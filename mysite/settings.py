@@ -60,7 +60,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.herokuapp.com/','https://elogstratup.herokuapp.com/','localhost', '127.0.0.1', '[::1]']
 
 TEMPLATES = [
     {
