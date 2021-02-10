@@ -60,7 +60,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
-ALLOWED_HOSTS =  ['*']
+ALLOWED_HOSTS = ['*']
 
 TEMPLATES = [
     {
