@@ -64,6 +64,7 @@ ROOT_URLCONF = 'mysite.urls'
 
 ALLOWED_HOSTS = ['.herokuapp.com','elogstratup.herokuapp.com','localhost', '127.0.0.1', '[::1]','*']
 
+ALLOW_PRIVATE_REPOS ='true'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
