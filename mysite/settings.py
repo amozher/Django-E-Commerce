@@ -140,11 +140,11 @@ USE_TZ = True
 
 #Ajouter from heroku
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
+STATIC_URL = 'home/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'home/static'),
 )
 
 MEDIA_URL = '/uploads/'
@@ -171,3 +171,7 @@ CKEDITOR_CONFIGS = {
 ###################################
 
 #APPEND_SLASH=False
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
