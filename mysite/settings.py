@@ -141,12 +141,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 #Ajouter from heroku
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles','home','static')
-STATIC_URL = 'home/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'home/static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 MEDIA_URL = '/uploads/'
