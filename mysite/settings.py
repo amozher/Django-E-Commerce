@@ -25,7 +25,7 @@ SECRET_KEY = '!l3!x0w-(f39+(@*a3a^8p@gf+o66e(@c#w1u13u*0=#-qpxbn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -57,14 +57,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'django.middleware.security.SecurityMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
 
 ALLOWED_HOSTS = ['.herokuapp.com','elogstratup.herokuapp.com','localhost', '127.0.0.1', '[::1]','*']
 
-ALLOW_PRIVATE_REPOS ='true'
+ALLOW_PRIVATE_REPOS = True
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -142,7 +142,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 #Ajouter from heroku
-STATIC_ROOT = os.path.join(BASE_DIR, 'home')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
